@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Github, Linkedin } from "lucide-react";
 
 export default function Home() {
