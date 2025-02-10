@@ -14,8 +14,8 @@ export default function Home() {
                 </code>
               </li>
               <li className="mb-1">Hi, my name is Wafiy.</li>
-              <li className="mb-1">I'm based in Shah Alam, Malaysia.</li>
-              <li className="mb-1">I'm a software developer with focus on fullstack web development.</li>
+              <li className="mb-1">I&apos;m based in Shah Alam, Malaysia.</li>
+              <li className="mb-1">I&apos;m a software developer with focus on fullstack web development.</li>
             </ul>
           </div>
         </main>
