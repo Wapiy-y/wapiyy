@@ -8,8 +8,11 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
-  title: "Hi, I'm Wapiyy",  
-  description: " my personal space" 
+  title: "I'm Wapiyy",  
+  description: " my personal space",
+  icons: {
+    icon: '/circle-icon.svg'
+  }
 }
 
 export default function RootLayout({
