@@ -19,8 +19,8 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="grid items-start justify-items-center min-h-screen p-0 gap-20 sm:p-0 bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
-      <div className="flex flex-col justify-between h-full p-14 max-w-3xl w-full">
+    <div className="flex flex-col items-center min-h-screen px-4 py-8 sm:px-0 bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+      <div className="flex flex-col gap-8 max-w-md w-full">
         
         <main className="flex flex-col gap-8">
           <div className="p-4 bg-white dark:bg-gray-800 shadow-md rounded-lg">
