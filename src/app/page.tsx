@@ -43,10 +43,7 @@ export default function Home() {
           <div className="flex flex-wrap gap-3">
             {[SiJavascript, SiTypescript, SiHtml5, SiDotnet, SiNextdotjs, SiReact, SiExpress, SiMongodb, SiGit, SiCss3, SiBootstrap, SiTailwindcss].map((Icon, idx) => (
               <div key={idx} className="flex items-center justify-center group">
-                <Icon size={24} className="hover:scale-110 transition-transform text-gray-700 dark:text-gray-300" />
-                <span className="absolute opacity-0 group-hover:opacity-100 transition-opacity text-xs bg-gray-800 text-white px-2 py-1 rounded-lg mt-6">
-                  {Icon.name.replace("Si", "")}
-                </span>
+                <Icon size={24} className="hover:scale-110 transition-transform text-gray-700 dark:text-gray-300" />              
               </div>
             ))}
           </div>
@@ -60,7 +57,7 @@ export default function Home() {
             <div className="relative">
               <p className="text-sm font-medium">Fullstack Developer Intern - AGTIV Consulting</p>
               <p className="text-sm text-gray-600 dark:text-gray-400">Jan 2024 - Present</p>
-              <p className="text-sm mt-1">Worked on the EPC software for AGTIV and contributed to MOC system for an oil and gas client.</p>
+              <p className="text-sm mt-1">Worked on the EPC software for AGTIV and MOC system for an oil and gas client.</p>
             </div>
             
             <div className="relative">
