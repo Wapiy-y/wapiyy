@@ -1,58 +1,74 @@
 "use client";
-import { Github, Linkedin } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
-import { SiJavascript, SiTypescript, SiHtml5, SiDotnet, SiNextdotjs, SiReact, SiExpress, SiMongodb, SiGit, SiCss3, SiBootstrap, SiTailwindcss } from "react-icons/si";
+import { Github, Linkedin, Twitter } from "lucide-react";
+
+const techStack = [
+  { name: 'JavaScript', color: 'bg-yellow-600' },
+  { name: 'TypeScript', color: 'bg-blue-600' },
+  { name: 'HTML5', color: 'bg-orange-600' },
+  // Add more technologies here...
+];
 
 export default function Home() {
-  const [emoji, setEmoji] = useState("👋");
-  const emojis = ["👋", "💻", "🚀", "✨"];
-  const index = useRef(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      index.current = (index.current + 1) % emojis.length;
-      setEmoji(emojis[index.current]);
-    }, 1500);
-    
-    return () => clearInterval(interval);
-  }, []);
 
   return (
-    <div className="flex flex-col items-center min-h-screen px-6 py-8 sm:px-0 bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
-      <div className="flex flex-col gap-8 max-w-lg w-full">
-        
+    <div className="flex flex-col items-center min-h-screen px-6 py-8 sm:px-0 bg-gray-950 text-white">
+      <div className="flex flex-col gap-1 max-w-lg w-full">
+
+        {/* Avatar profile */}
+        <div className="ps-6 pe-6 flex items-center justify-center">
+          <img
+              src="/profile.jpg"
+              alt="Profile"
+              className="w-32 h-32 rounded-full border-2 border-gray-400 object-cover"
+          />
+        </div>
+
         {/* Hero Section */}
-        <div className="p-6 bg-white dark:bg-gray-800 shadow-lg rounded-xl transition-all hover:shadow-xl">
-          <ul className="list-none text-base leading-relaxed">
-            <li className="mb-2">
-              <code className="bg-black/[.05] dark:bg-white/[.06] px-2 py-1 rounded font-semibold">
-                Hi <span className="transition-all duration-500 ease-in-out">{emoji}</span>
-              </code>
-            </li>
+        <div className="ps-6 pe-6">
+          <ul className="list-none">
             <li className="mb-1">
-              Hi, my name is <span className="text-orange-500 font-semibold">Wafiy.</span>
+              Hey there! I'm <span className="underline decoration-sky-500 font-semibold">Wafiy.</span>
             </li>
-            <li className="mb-1">Based in Shah Alam, Malaysia.</li>
-            <li className="mb-1">Software Developer focusing on Fullstack Web Development.</li>
+            <li className="mb-2">A full-stack developer based in Shah Alam, Malaysia. 🇲🇾</li>
+            <li className="mb-2">I love turning ideas into cool web apps & making the internet a better place</li>
           </ul>
         </div>
 
-        {/* Tech Stack */}
-        <div className="p-6 bg-white dark:bg-gray-800 shadow-lg rounded-xl transition-all hover:shadow-xl">
-          <p className="text-base font-semibold mb-4">Tech Stack</p>
-          <div className="flex flex-wrap gap-3">
-            {[SiJavascript, SiTypescript, SiHtml5, SiDotnet, SiNextdotjs, SiReact, SiExpress, SiMongodb, SiGit, SiCss3, SiBootstrap, SiTailwindcss].map((Icon, idx) => (
-              <div key={idx} className="flex items-center justify-center group">
-                <Icon size={24} className="hover:scale-110 transition-transform text-gray-700 dark:text-gray-300" />              
-              </div>
-            ))}
+        {/* connect */}
+        <div className="ps-6 pe-6 flex flex-col gap-2 pt-1">
+          <p className="text-gray-700 dark:text-gray-400">Social media</p>
+          <div className="flex gap-6">
+            <a
+                className="flex items-center gap-2 hover:text-sky-500 transition"
+                href="https://github.com/Wapiy-y"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+              <Github className="w-4 h-4" />
+            </a>
+            <a
+                className="flex items-center gap-2 hover:text-sky-500 transition "
+                href="https://www.linkedin.com/in/abdullahwafiy/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+              <Linkedin className="w-4 h-4 "/>
+            </a>
+            <a
+                className="flex items-center gap-2 hover:text-sky-500 transition"
+                href="https://x.com/amadikatuu"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+              <Twitter className="w-4 h-4" />
+            </a>
           </div>
         </div>
 
         {/* Experience Section */}
-        <div className="p-6 bg-white dark:bg-gray-800 shadow-lg rounded-xl transition-all hover:shadow-xl">
-          <p className="text-base font-semibold mb-4">Experience</p>
-          <div className="relative border-l-2 border-gray-400 dark:border-gray-600 pl-6 space-y-6">
+        <div className="ps-6 pe-6 pt-4">
+          <p className="text-base font-semibold mb-4 text-gray-400">Experience</p>
+          <div className="relative border-l-2 border-sky-500 pl-6 space-y-6">
             
             <div className="relative">
               <p className="text-sm font-medium">Fullstack Developer Intern - AGTIV Consulting</p>
@@ -68,28 +84,21 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Footer */}
-        <footer className="flex flex-col items-center gap-4 mt-auto pb-4 text-sm">
-          <p className="text-gray-700 dark:text-gray-400">Let’s connect! 👇</p>
-          <div className="flex gap-6">
-            <a
-              className="flex items-center gap-2 hover:text-orange-500 transition"
-              href="https://github.com/Wapiy-y"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Github className="w-5 h-5" />
-            </a>
-            <a
-              className="flex items-center gap-2 hover:text-orange-500 transition"
-              href="https://www.linkedin.com/in/abdullahwafiy/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Linkedin className="w-5 h-5" />
-            </a>
+        {/* Tech Stack */}
+        <div className="ps-6 pe-6 pt-4">
+          <p className="text-base font-semibold mb-4 text-gray-400">Tech Stack</p>
+          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-3">
+            {techStack.map((tech, idx) => (
+                <div
+                    key={idx}
+                    className={`flex items-center justify-center py-1 px-3 rounded-full ${tech.color} text-white text-sm`}
+                >
+                  {tech.name}
+                </div>
+            ))}
           </div>
-        </footer>
+        </div>
+
       </div>
     </div>
   );
