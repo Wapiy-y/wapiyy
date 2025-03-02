@@ -1,5 +1,6 @@
 "use client";
 import { Github, Linkedin, Twitter } from "lucide-react";
+import Image from 'next/image';
 
 const techStack = [
   { name: 'JavaScript', color: 'bg-yellow-600' },
@@ -16,9 +17,11 @@ export default function Home() {
 
         {/* Avatar profile */}
         <div className="ps-6 pe-6 flex items-center justify-center">
-          <img
+          <Image
               src="/profile.jpg"
-              alt="Profile"
+              alt="User profile picture"
+              width={128} // Adjust based on your design
+              height={128}
               className="w-32 h-32 rounded-full border-2 border-gray-400 object-cover"
           />
         </div>
@@ -27,7 +30,7 @@ export default function Home() {
         <div className="ps-6 pe-6">
           <ul className="list-none">
             <li className="mb-1">
-              Hey there! I'm <span className="underline decoration-sky-500 font-semibold">Wafiy.</span>
+              Hey there! I&apos;m <span className="underline decoration-sky-500 font-semibold">Wafiy.</span>
             </li>
             <li className="mb-2">A full-stack developer based in Shah Alam, Malaysia. 🇲🇾</li>
             <li className="mb-2">I love turning ideas into cool web apps & making the internet a better place</li>
