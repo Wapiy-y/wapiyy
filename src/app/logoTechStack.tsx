@@ -1,0 +1,20 @@
+export const techStack = [
+    { name: "Bootstrap", logo: "/logo/bootstrap.svg" },
+    { name: "C#", logo: "/logo/csharp.svg" },
+    { name: "CSS", logo: "/logo/css_old.svg" },
+    { name: "Express.js", logo: "/logo/expressjs_dark.svg" },
+    { name: "Git", logo: "/logo/git.svg" },
+    { name: "GitHub", logo: "/logo/github-dark.svg" },
+    { name: "HTML5", logo: "/logo/html5.svg" },
+    { name: "JavaScript", logo: "/logo/javascript.svg" },
+    { name: "MongoDB", logo: "/logo/mongodb.svg" },
+    { name: "MySQL", logo: "/logo/mysql.svg" },
+    { name: "Next.js", logo: "/logo/nextjs_icon_dark.svg" },
+    { name: "PostgreSQL", logo: "/logo/postgresql.svg" },
+    { name: "Postman", logo: "/logo/postman.svg" },
+    { name: "React", logo: "/logo/react_light.svg" },
+    { name: "SQL Server", logo: "/logo/sql-server.svg" },
+    { name: "Tailwind CSS", logo: "/logo/tailwindcss.svg" },
+    { name: "TypeScript", logo: "/logo/typescript.svg" },
+];
+
