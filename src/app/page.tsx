@@ -25,7 +25,7 @@ export default function Home() {
           {/* Hero Section */}
           <div className="px-6 text-center max-w-md mx-auto">
             <p className="text-[16px] text-gray-300 font-normal leading-relaxed mt-2">
-              I'm Wafiy – messing with tech, breaking stuff, and (mostly) fixing it.
+              Im Wafiy – messing with tech, breaking stuff, and (mostly) fixing it.
               A 23-year-old fresh grad with some hands-on <Link href="/experience" className="underline">experience</Link> from studies and internship.
               In my free time? Probably building a side <Link href="/project" className="underline">project</Link>... or abandoning one halfway.
             </p>
@@ -70,7 +70,7 @@ export default function Home() {
               >
                 {[...techStack, ...techStack].map((tech, index) => (
                     <div key={index} className="flex items-center justify-center min-w-[100px]">
-                      <img src={tech.logo} alt={tech.name} className="h-6 w-auto object-contain" />
+                      <Image src={tech.logo} alt={tech.name} width={128} height={128} className="h-6 w-auto object-contain" />
                     </div>
                 ))}
               </motion.div>

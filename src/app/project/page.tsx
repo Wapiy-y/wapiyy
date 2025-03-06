@@ -1,5 +1,6 @@
 import { Link as LinkIcon, MoveLeft } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Project = () => (
     <>
@@ -20,8 +21,10 @@ const Project = () => (
                         {/* First Project */}
                         <div className="bg-gray-800 border border-gray-700 rounded-xl overflow-hidden group">
                             <div className="overflow-hidden">
-                                <img src="/collabFamily.png"
+                                <Image src="/collabFamily.png"
                                      alt="CollabFamily"
+                                     width={200}
+                                     height={200}
                                      className="w-full h-48 object-cover transform transition-transform duration-300 ease-in-out group-hover:scale-110"
                                 />
                             </div>
@@ -44,8 +47,10 @@ const Project = () => (
                         {/* Second Project */}
                         <div className="bg-gray-800 border border-gray-700 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 group">
                             <div className="overflow-hidden">
-                                <img src="/Qrder.png"
+                                <Image src="/Qrder.png"
                                      alt="Qrder"
+                                     width={200}
+                                     height={200}
                                      className="w-full h-48 object-cover transform transition-transform duration-300 ease-in-out group-hover:scale-110"
                                 />
                             </div>
