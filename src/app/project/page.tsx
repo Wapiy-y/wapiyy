@@ -44,6 +44,31 @@ const Project = () => (
                             </div>
                         </div>
 
+                        {/* third project */}
+                        <div className="bg-gray-800 border border-gray-700 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 group">
+                            <div className="overflow-hidden">
+                                <Image src="/alat.png"
+                                     alt="Alat"
+                                     width={160}
+                                     height={160}
+                                     className="w-full h-48 object-cover transform transition-transform duration-300 ease-in-out group-hover:scale-110"
+                                />
+                            </div>
+                            <div className="p-4">
+                                <div className="flex justify-between items-center">
+                                    <a className="flex items-center text-[16px] font-semibold text-white gap-1" href="https://alat-tool.vercel.app/" target="_blank">
+                                        Alat <LinkIcon className="w-3 h-3" />
+                                    </a>
+                                    <span className="bg-green-500 text-white text-xs font-bold px-2 py-1 rounded">Live</span>
+                                </div>
+                                <p className="mt-2 text-[16px] text-gray-400 flex gap-2">
+                                    <span className="text-[12px]">NextJS</span>
+                                    <span className="text-[12px]">Tailwind</span>
+                                    <span className="text-[12px]">Shadcn</span>
+                                </p>
+                            </div>
+                        </div>
+
                         {/* Second Project */}
                         <div className="bg-gray-800 border border-gray-700 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 group">
                             <div className="overflow-hidden">
@@ -65,6 +90,8 @@ const Project = () => (
                                 </p>
                             </div>
                         </div>
+
+                        
                     </div>
                 </div>
 
